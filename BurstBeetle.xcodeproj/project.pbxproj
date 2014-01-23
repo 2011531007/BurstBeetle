@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA044E2D186BE29A008042CA /* Beetle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA044E2C186BE29A008042CA /* Beetle.jpg */; };
+		AA044E2F186BF59A008042CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA044E2E186BF59A008042CA /* QuartzCore.framework */; };
 		AA84804A18596D33001D3471 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA84804918596D33001D3471 /* UIKit.framework */; };
 		AA84804C18596D33001D3471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA84804B18596D33001D3471 /* Foundation.framework */; };
 		AA84804E18596D33001D3471 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA84804D18596D33001D3471 /* CoreGraphics.framework */; };
@@ -23,6 +25,7 @@
 		AA84807018596D33001D3471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA84804B18596D33001D3471 /* Foundation.framework */; };
 		AA84807818596D33001D3471 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA84807618596D33001D3471 /* InfoPlist.strings */; };
 		AA84807B18596D33001D3471 /* BurstBeetleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA84807A18596D33001D3471 /* BurstBeetleTests.m */; };
+		AA84808618597503001D3471 /* Chara.m in Sources */ = {isa = PBXBuildFile; fileRef = AA84808518597503001D3471 /* Chara.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA84804618596D33001D3471 /* BurstBeetle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurstBeetle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA044E2A186BDF6B008042CA /* BurstBeetle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurstBeetle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA044E2B186BDF6B008042CA /* BurstBeetleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurstBeetleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA044E2C186BE29A008042CA /* Beetle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Beetle.jpg; sourceTree = "<group>"; };
+		AA044E2E186BF59A008042CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AA84804918596D33001D3471 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AA84804B18596D33001D3471 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AA84804D18596D33001D3471 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,12 +58,13 @@
 		AA84806218596D33001D3471 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AA84806418596D33001D3471 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AA84806518596D33001D3471 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AA84806C18596D33001D3471 /* BurstBeetleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BurstBeetleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA84806D18596D33001D3471 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		AA84807518596D33001D3471 /* BurstBeetleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BurstBeetleTests-Info.plist"; sourceTree = "<group>"; };
 		AA84807718596D33001D3471 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA84807918596D33001D3471 /* BurstBeetleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BurstBeetleTests.h; sourceTree = "<group>"; };
 		AA84807A18596D33001D3471 /* BurstBeetleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BurstBeetleTests.m; sourceTree = "<group>"; };
+		AA84808418597503001D3471 /* Chara.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chara.h; sourceTree = "<group>"; };
+		AA84808518597503001D3471 /* Chara.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chara.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA044E2F186BF59A008042CA /* QuartzCore.framework in Frameworks */,
 				AA84804A18596D33001D3471 /* UIKit.framework in Frameworks */,
 				AA84804C18596D33001D3471 /* Foundation.framework in Frameworks */,
 				AA84804E18596D33001D3471 /* CoreGraphics.framework in Frameworks */,
@@ -87,20 +95,13 @@
 		AA84803D18596D33001D3471 = {
 			isa = PBXGroup;
 			children = (
+				AA044E2E186BF59A008042CA /* QuartzCore.framework */,
 				AA84804F18596D33001D3471 /* BurstBeetle */,
 				AA84807318596D33001D3471 /* BurstBeetleTests */,
 				AA84804818596D33001D3471 /* Frameworks */,
-				AA84804718596D33001D3471 /* Products */,
+				AA044E2A186BDF6B008042CA /* BurstBeetle.app */,
+				AA044E2B186BDF6B008042CA /* BurstBeetleTests.octest */,
 			);
-			sourceTree = "<group>";
-		};
-		AA84804718596D33001D3471 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AA84804618596D33001D3471 /* BurstBeetle.app */,
-				AA84806C18596D33001D3471 /* BurstBeetleTests.octest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AA84804818596D33001D3471 /* Frameworks */ = {
@@ -123,6 +124,8 @@
 				AA84806418596D33001D3471 /* ViewController.h */,
 				AA84806518596D33001D3471 /* ViewController.m */,
 				AA84805018596D33001D3471 /* Supporting Files */,
+				AA84808418597503001D3471 /* Chara.h */,
+				AA84808518597503001D3471 /* Chara.m */,
 			);
 			path = BurstBeetle;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 		AA84805018596D33001D3471 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA044E2C186BE29A008042CA /* Beetle.jpg */,
 				AA84805118596D33001D3471 /* BurstBeetle-Info.plist */,
 				AA84805218596D33001D3471 /* InfoPlist.strings */,
 				AA84805518596D33001D3471 /* main.m */,
@@ -177,7 +181,7 @@
 			);
 			name = BurstBeetle;
 			productName = BurstBeetle;
-			productReference = AA84804618596D33001D3471 /* BurstBeetle.app */;
+			productReference = AA044E2A186BDF6B008042CA /* BurstBeetle.app */;
 			productType = "com.apple.product-type.application";
 		};
 		AA84806B18596D33001D3471 /* BurstBeetleTests */ = {
@@ -196,7 +200,7 @@
 			);
 			name = BurstBeetleTests;
 			productName = BurstBeetleTests;
-			productReference = AA84806C18596D33001D3471 /* BurstBeetleTests.octest */;
+			productReference = AA044E2B186BDF6B008042CA /* BurstBeetleTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +220,7 @@
 				en,
 			);
 			mainGroup = AA84803D18596D33001D3471;
-			productRefGroup = AA84804718596D33001D3471 /* Products */;
+			productRefGroup = AA84803D18596D33001D3471;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -236,6 +240,7 @@
 				AA84805E18596D33001D3471 /* Default@2x.png in Resources */,
 				AA84806018596D33001D3471 /* Default-568h@2x.png in Resources */,
 				AA84806318596D33001D3471 /* MainStoryboard.storyboard in Resources */,
+				AA044E2D186BE29A008042CA /* Beetle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +278,7 @@
 				AA84805618596D33001D3471 /* main.m in Sources */,
 				AA84805A18596D33001D3471 /* AppDelegate.m in Sources */,
 				AA84806618596D33001D3471 /* ViewController.m in Sources */,
+				AA84808618597503001D3471 /* Chara.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +459,7 @@
 				AA84808018596D33001D3471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA84808118596D33001D3471 /* Build configuration list for PBXNativeTarget "BurstBeetleTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +468,7 @@
 				AA84808318596D33001D3471 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

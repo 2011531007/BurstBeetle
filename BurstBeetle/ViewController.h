@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Chara.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController : UIViewController
 
+- (IBAction)ShortMove:(id)sender;
+- (IBAction)LongMove:(id)sender;
+@property NSInteger ButtonPush;
+@property int SRight;
+@property int SLeft;
+
+
 @end
+
+
