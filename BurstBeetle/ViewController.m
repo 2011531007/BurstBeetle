@@ -27,7 +27,7 @@
     
     timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateDisplay)];
     [timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view, typically from a nib.//
 }
 
 - (void)didReceiveMemoryWarning
