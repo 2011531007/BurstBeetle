@@ -10,7 +10,12 @@
 #import "Chara.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    UIImageView *playerImage;
+    UIImage *backgroundImage;
+}
+- (IBAction)shortMoveDown:(id)sender;
+- (IBAction)LongMoveDown:(id)sender;
 
 - (IBAction)ShortMove:(id)sender;
 - (IBAction)LongMove:(id)sender;

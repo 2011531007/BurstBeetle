@@ -21,12 +21,14 @@
 {
     [super viewDidLoad];
 
-    player = [[Chara alloc]initWithX:150 Y:300 width:30 height:50 image:@"Beetle.jpg"];
-    UIImageView *playerImage = [player Draw];
+    player = [[Chara alloc]initWithX:150 Y:320 width:30 height:50 image:@"Beetle.jpg"];
+    playerImage = [player Draw];
     [self.view addSubview:playerImage];
     
     timer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateDisplay)];
     [timer addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
+    
+    //[backgroundImage release];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -43,41 +45,71 @@ NSInteger SRight = NO;
 - (void)updateDisplay{
     if(ButtonPush == YES){
     if(self.SLeft == 1){
-        player.x -= 10;
-        UIImageView *playerImage = [player Draw];
-        [self.view addSubview:playerImage];
-
+        CGRect playerFrame = playerImage.frame;
+        playerFrame.origin.x -= 5;
+        if(playerFrame.origin.x < 0)
+            playerFrame.origin.x = 0;
+        [playerImage setFrame:playerFrame];
+        
     }else if (self.SRight == 1){
-        player.x += 10;
+        CGRect playerFrame = playerImage.frame;
+        playerFrame.origin.x += 5;
+        if(playerFrame.origin.x > 290)
+            playerFrame.origin.x = 290;
+        [playerImage setFrame:playerFrame];
 
     }
-    //    self.SLeft = 0;
-    //    self.SRight = 0;
+        if(self.SLeft == 2){
+            CGRect playerFrame = playerImage.frame;
+            playerFrame.origin.x -= 10;
+            if(playerFrame.origin.x < 0)
+                playerFrame.origin.x = 0;
+            [playerImage setFrame:playerFrame];
+
+            
+        }else if (self.SRight == 2){
+            CGRect playerFrame = playerImage.frame;
+            playerFrame.origin.x += 10;
+            if(playerFrame.origin.x > 290)
+                playerFrame.origin.x = 290;
+            [playerImage setFrame:playerFrame];
+        }
   }
 }
-- (IBAction)ShortMove:(id)sender {
+
+- (IBAction)shortMoveDown:(id)sender {
     UIButton *b = (UIButton *)sender;
-    ButtonPush = YES;    
+    ButtonPush = YES;
     if(b.tag == 0){
         self.SLeft = 1;
     }else if (b.tag == 1){
         self.SRight = 1;
     }
+}
 
+- (IBAction)LongMoveDown:(id)sender {
+    UIButton *b = (UIButton *)sender;
+    ButtonPush = YES;
+    if(b.tag == 3){
+        self.SLeft = 2;
+    }else if (b.tag == 4){
+        self.SRight = 2;
+    }
+
+}
+
+- (IBAction)ShortMove:(id)sender {
+        ButtonPush = NO;
+        self.SLeft = 0;
+        self.SRight = 0;
 }
 
 
 
 - (IBAction)LongMove:(id)sender {
-    UIButton *b = (UIButton *)sender;
-    if(b.tag == 0){
-        player.x -= 30;
-
-    }else if (b.tag == 1){
-        player.x += 30;
-    }
-    UIImageView *playerImage = [player Draw];
-    [self.view addSubview:playerImage];
+    ButtonPush = NO;
+    self.SLeft = 0;
+    self.SRight = 0;
 }
 
 
